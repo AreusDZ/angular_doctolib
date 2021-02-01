@@ -13,6 +13,7 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
 import { PraticiensComponent } from './praticiens/praticiens.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PraticienComponent } from './praticien/praticien.component';
+import { FormsModule } from '@angular/forms'
 
 const appRoutes: Routes = [
   {path:'' , component: SearchBarComponent},
@@ -43,7 +44,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes)
+    FormsModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]

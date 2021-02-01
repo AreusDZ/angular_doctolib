@@ -43,7 +43,7 @@ export class PatientService {
     }, {
       observe  : 'response',
     }).subscribe((response) => {
-      console.log(response);
+      document.location.href="http://localhost:4200";
     }, (error) => {
       console.log(error);
     })

@@ -50,15 +50,15 @@ export class AppComponent implements OnInit {
     })
     */
 
-    /* //! ADD PATIENT
-    this.patientService.AddPatient(
-      "test@httprequest.com",
-      "testHttpNom",
-      "testHttpPrenom",
-      21,
-      "motDePasse"
-    )
-    */
+     //! ADD PATIENT
+    // this.patientService.AddPatient(
+    //   "test@httprequest.com",
+    //   "testHttpNom",
+    //   "testHttpPrenom",
+    //   21,
+    //   "motDePasse"
+    // )
+
 
     /* //! DELETE PATIENT
     this.patientService.DelPatient(13)

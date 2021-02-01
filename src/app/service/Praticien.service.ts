@@ -33,17 +33,16 @@ export class PraticienService {
     })
   }
 
-  AddPraticien(mail:string, nom:string, prenom:string, specialite:string, password:string) {
+  AddPraticien(mail:string, nom:string, specialite:string, password:string) {
     this.http.post<Praticien[]>("http://localhost:8000/praticiens", {
       email     : mail,
       nom       : nom,
-      prenom    : prenom,
       specialite: specialite,
       password  : password
     }, {
       observe  : 'response',
     }).subscribe((response) => {
-      console.log(response);
+      document.location.href="http://localhost:4200";
     }, (error) => {
       console.log(error);
     })
