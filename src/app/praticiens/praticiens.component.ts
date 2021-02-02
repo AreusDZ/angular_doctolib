@@ -22,6 +22,7 @@ export class PraticiensComponent implements OnInit {
     }, (error) => {
       console.log(error);
     })
+    // this.praticienService.getAllPraticiens();
   }
 
 }

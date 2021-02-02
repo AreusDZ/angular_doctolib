@@ -1,0 +1,23 @@
+<h2 class="text-center">Inscription Praticien</h2>
+<div class="row col-8 offset-4">
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm" class="col-6">
+    <div class="mb-3">
+      <label for="Nom" class="form-label">Nom</label>
+      <input type="text" class="form-control" id="Nom" name="Nom" aria-describedby="Nom" ngModel>
+    </div>
+    <div class="mb-3">
+      <label for="Specialite" class="form-label">Spécialité</label>
+      <input type="text" class="form-control" id="Specialite" name="Specialite" ngModel>
+    </div>
+    <div class="mb-3">
+      <label for="Email" class="form-label">Email</label>
+      <input type="text" class="form-control" id="Email" name="Email" ngModel>
+    </div>
+    <div class="mb-3">
+      <label for="Password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="Password" name="Password" ngModel>
+    </div>
+    <button type="submit" class="btn btn-success">Inscription</button>
+  </form>
+</div>
+

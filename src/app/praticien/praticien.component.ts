@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit,Input } from '@angular/core';
+import { Praticien } from './../model/Praticien.model';
 @Component({
   selector: 'app-praticien',
   templateUrl: './praticien.component.html',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PraticienComponent implements OnInit {
 
+ //* Get praticien detail
+ @Input() Praticien:Praticien;
   constructor() { }
 
   ngOnInit(): void {

@@ -48,11 +48,10 @@ export class PraticienService {
     })
   }
 
-  PutPraticien(id:number, mail:string, nom:string, prenom:string, specialite:string, password:string) {
+  PutPraticien(id:number, mail:string, nom:string, specialite:string, password:string) {
     this.http.put<Praticien[]>("http://localhost:8000/praticien/" + id, {
       email     : mail,
       nom       : nom,
-      prenom    : prenom,
       specialite: specialite,
       password  : password,
     }, {
