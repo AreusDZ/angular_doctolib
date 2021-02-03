@@ -17,7 +17,9 @@ import { PraticienComponent } from './praticien/praticien.component';
 import { FormsModule } from '@angular/forms';
 import { IndexComponent } from './index/index.component';
 import { searchResultComponent } from './searchResult/searchResult.component';
-import { ModificationComponent } from './modification/modification.component'
+import { ModificationComponent } from './modification/modification.component';
+import { ModificationPraticienComponent } from './modification/ModificationPraticien/modificationPraticien.component';
+import { ModificationPatientComponent } from './modification/ModificationPatient/modificationPatient.component';
 
 
 const appRoutes: Routes = [
@@ -30,6 +32,8 @@ const appRoutes: Routes = [
   {path:'listeRendezVous' , component: ListeRDVComponent},
   {path:'priseRendezVous' , component: PriseRDVComponent},
   {path:'lesPraticiens' , component: PraticiensComponent},
+  {path:'modificationPraticien' , component: ModificationComponent},
+  {path:'modificationPatient' , component: ModificationComponent},
   {path:'detailPraticien' , component: PraticienComponent}
 ];
 
@@ -46,7 +50,9 @@ const appRoutes: Routes = [
     PraticienComponent,
     IndexComponent,
     searchResultComponent,
-    ModificationComponent
+    ModificationComponent,
+    ModificationPraticienComponent,
+    ModificationPatientComponent,
   ],
   imports: [
     BrowserModule,
