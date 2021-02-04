@@ -23,7 +23,7 @@ patient :Patient;
       console.log(error);
     })
   }
-  // ici je récupère les informations du praticien connecté dès le lancement de la page car c'est dans le onInit
+  // ici je récupère les informations du patient connecté dès le lancement de la page car c'est dans le onInit
 
   onSubmit(form: NgForm) {
     const email = form.value['Email'];

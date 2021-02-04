@@ -1,0 +1,6 @@
+#monComptePatient {
+  background : rgb(38,136,202);
+  background : linear-gradient(180deg, rgba(38,136,202,1) 0%, rgba(0,138,255,1) 35%, rgba(51,203,231,1) 100%);
+  color      : white;
+  padding-top: 5%;
+}

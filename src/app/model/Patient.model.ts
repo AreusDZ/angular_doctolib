@@ -1,6 +1,6 @@
 
 export interface Patient {
-  int    : number,
+  id    : number,
   nom    : string,
   prenom : string,
   age    : number,

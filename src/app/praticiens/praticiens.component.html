@@ -1,6 +1,8 @@
-<div class="row col-8 offset-2">
-  <h2>Tous les praticiens</h2>
-  <table *ngFor="let praticien of allPraticiens" class="table">
+<div id = "praticiens" class="row">
+  <div class="col-2"></div>
+<div id="mainBlock"  class="col-8 ">
+  <h2 class="text-center">Tous les praticiens</h2>
+  <table *ngFor="let praticien of allPraticiens" id = "tableauPraticien" class="table col-">
     <thead>
       <tr>
         <th scope="col">Nom</th>
@@ -10,10 +12,15 @@
     </thead>
     <tbody>
       <tr>
-        <td  scope="col" >Dr. {{praticien.nom}}</td>
+        <td scope="col" >Dr. {{praticien.nom}}</td>
         <td scope="col" >{{praticien.specialite}}</td>
         <td scope="col" ><a class="btn btn-success">RDV</a></td>
       </tr>
     </tbody>
   </table>
 </div>
+<div class="col-2"></div>
+</div>
+
+
+

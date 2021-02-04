@@ -20,6 +20,8 @@ import { searchResultComponent } from './searchResult/searchResult.component';
 import { ModificationComponent } from './modification/modification.component';
 import { ModificationPraticienComponent } from './modification/ModificationPraticien/modificationPraticien.component';
 import { ModificationPatientComponent } from './modification/ModificationPatient/modificationPatient.component';
+import { MonCompteComponent } from './mon-compte/mon-compte.component';
+import { MonComptePatientComponent } from './mon-compte/monComptePatient/monComptePatient.component';
 
 
 const appRoutes: Routes = [
@@ -34,6 +36,7 @@ const appRoutes: Routes = [
   {path:'lesPraticiens' , component: PraticiensComponent},
   {path:'modificationPraticien' , component: ModificationComponent},
   {path:'modificationPatient' , component: ModificationComponent},
+  {path:'monComptePatient' , component: MonCompteComponent},
   {path:'detailPraticien' , component: PraticienComponent}
 ];
 
@@ -53,6 +56,8 @@ const appRoutes: Routes = [
     ModificationComponent,
     ModificationPraticienComponent,
     ModificationPatientComponent,
+    MonCompteComponent,
+    MonComptePatientComponent,
   ],
   imports: [
     BrowserModule,

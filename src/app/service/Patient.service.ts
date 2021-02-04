@@ -28,6 +28,7 @@ export class PatientService {
       observe : 'body',
     }).subscribe((response) => {
       console.log('Succesfully delete. ' + response);
+      document.location.href="http://localhost:4200";
     }, (error) => {
       console.log(error);
     })
