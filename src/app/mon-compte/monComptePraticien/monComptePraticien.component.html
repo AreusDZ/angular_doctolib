@@ -1,0 +1,20 @@
+<div id="connexion" class="row">
+
+  <div class="col-2"></div>
+
+  <div id="infosPraticien" class="col-8">
+    <h3>Vos informations personnelles</h3>
+    <p><strong>Nom : </strong>{{praticien.nom}}</p>
+    <p> <strong>Spécialité :</strong> {{praticien.specialite}}</p>
+    <p><strong>Mail : </strong>{{praticien.email}}</p>
+    <hr>
+    <div id="aperçuRDV">
+      <h3>Vos prochains rendez-vous :</h3>
+      <p><strong>Le</strong> .... <strong>à</strong> ??H?? <strong>avec</strong> le Dr...</p>
+    </div>
+    <button (click)="onSubmit(this.id)" class="btn btn-danger" type="submit">Supprimer mon compte</button>
+  </div>
+
+  <div class="col-2"></div>
+
+</div>

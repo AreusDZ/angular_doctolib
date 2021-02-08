@@ -22,6 +22,7 @@ import { ModificationPraticienComponent } from './modification/ModificationPrati
 import { ModificationPatientComponent } from './modification/ModificationPatient/modificationPatient.component';
 import { MonCompteComponent } from './mon-compte/mon-compte.component';
 import { MonComptePatientComponent } from './mon-compte/monComptePatient/monComptePatient.component';
+import { MonComptePraticienComponent } from './mon-compte/monComptePraticien/monComptePraticien.component';
 
 
 const appRoutes: Routes = [
@@ -37,6 +38,7 @@ const appRoutes: Routes = [
   {path:'modificationPraticien' , component: ModificationComponent},
   {path:'modificationPatient' , component: ModificationComponent},
   {path:'monComptePatient' , component: MonCompteComponent},
+  {path:'monComptePraticien' , component: MonCompteComponent},
   {path:'detailPraticien' , component: PraticienComponent}
 ];
 
@@ -58,6 +60,7 @@ const appRoutes: Routes = [
     ModificationPatientComponent,
     MonCompteComponent,
     MonComptePatientComponent,
+    MonComptePraticienComponent,
   ],
   imports: [
     BrowserModule,
