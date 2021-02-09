@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
 import { Patient } from './model/Patient.model';
 import { Praticien } from './model/Praticien.model';
 import { RendezVous } from './model/RendezVous.model';
+import { AppService } from './app.service';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,8 @@ import { RendezVous } from './model/RendezVous.model';
 })
 export class AppComponent implements OnInit {
   title = 'AngularDoctolib';
+
+  session = localStorage;
 
   allPatients:Patient[];
   patient:Patient;
@@ -28,7 +31,8 @@ export class AppComponent implements OnInit {
   constructor(
     private patientService:PatientService,
     private praticienService:PraticienService,
-    private rdvService:RendezVousService
+    private rdvService:RendezVousService,
+    private AppService:AppService,
   ) {}
 
   ngOnInit():void {
@@ -167,5 +171,8 @@ export class AppComponent implements OnInit {
       3
     )
     */
+  }
+  logout() {
+    this.AppService.logout();
   }
 }

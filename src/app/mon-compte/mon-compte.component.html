@@ -3,10 +3,11 @@
 
   <div class="col-2"></div>
 
-  <div id="mainBlock" class="col-8 offset-3">
-
-   <!-- <app-monComptePatient></app-monComptePatient> -->
-   <app-monComptePraticien></app-monComptePraticien>
+  <div *ngIf="this.type == 'patient'" id="mainBlock" class="col-8 offset-3">
+    <app-monComptePatient></app-monComptePatient>
+  </div>
+  <div *ngIf="this.type == 'praticien'" id="mainBlock" class="col-8 offset-3">
+    <app-monComptePraticien></app-monComptePraticien>
   </div>
 
   <div class="col-2"></div>

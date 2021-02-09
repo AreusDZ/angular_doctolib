@@ -12,25 +12,30 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" routerLinkActive = "active" routerLink="lesPraticiens">Les praticiens</a>
               </li>
-              <li class="nav-item">
+              <li *ngIf="session.length != 0" class="nav-item">
                 <a class="nav-link" routerLinkActive = "active" routerLink="listeRendezVous">Mes rendez-vous</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Inscription
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" routerLinkActive = "active" routerLink="inscriptionPatient">S'inscrire comme patient</a></li>
-                  <li><a class="dropdown-item" routerLinkActive = "active" routerLink="inscriptionPraticien">S'inscrire comme praticien</a></li>
-                </ul>
+              <li *ngIf="session.length == 0"  class="nav-item">
+                <a class="nav-link" routerLinkActive = "active" routerLink="inscriptionPatient">S'inscrire comme patient</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" routerLinkActive = "active" routerLink="connexion">Connexion</a>
+              <li *ngIf="session.length == 0"  class="nav-item">
+                <a class="nav-link" routerLinkActive = "active" routerLink="inscriptionPraticien">S'inscrire comme praticien</a>
               </li>
+              <li *ngIf="session.length == 0" class="nav-item">
+                <a class="nav-link" routerLinkActive = "active" routerLink="connexion">Se connecter</a>
+              </li>
+              <li *ngIf="session.length != 0" class="nav-item" routerLinkActiveOptions="{exact:true}" routerLinkActive="active">
+                <a class="nav-link" routerLink="monCompte">Mon compte</a>
+              </li>
+              <li *ngIf="session.length != 0" class="nav-item" routerLinkActiveOptions="{exact:true}" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['/']" (click)="logout()">Se déconnecter</a>
+              </li>
+
             </ul>
           </div>
         </div>
       </nav>
+
   </div>
 </div>
 </header>

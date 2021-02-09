@@ -8,7 +8,8 @@ import { Praticien } from 'src/app/model/Praticien.model';
 })
 export class MonComptePraticienComponent implements OnInit {
 
-id = 41;  // id en dur, il faudra récupérer celui du patient connecté
+userInfo = JSON.parse(localStorage.getItem('userInfo'));
+id = this.userInfo.id;  // id de la personne connecté
 praticien :Praticien;
 
 

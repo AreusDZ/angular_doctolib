@@ -3,9 +3,11 @@
 
   <div class="col-2"></div>
 
-  <div id="mainBlock" class="col-8">
-    <!-- <app-modification-praticien></app-modification-praticien> -->
+  <div *ngIf="this.type == 'patient'"  id="mainBlock" class="col-8">
     <app-modification-patient></app-modification-patient>
+  </div>
+  <div *ngIf="this.type == 'praticien'"  id="mainBlock" class="col-8">
+    <app-modification-praticien></app-modification-praticien>
   </div>
 
   <div class="col-2"></div>

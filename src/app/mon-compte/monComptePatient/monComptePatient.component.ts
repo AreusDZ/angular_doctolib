@@ -8,9 +8,9 @@ import { Patient } from 'src/app/model/Patient.model';
 })
 export class MonComptePatientComponent implements OnInit {
 
-id = 5;  // id en dur, il faudra récupérer celui du patient connecté
+userInfo = JSON.parse(localStorage.getItem('userInfo'));
+id = this.userInfo.id;  // id en dur, il faudra récupérer celui du patient connecté
 patient :Patient;
-
 
   constructor(private patientService:PatientService) { }
 

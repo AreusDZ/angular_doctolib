@@ -14,6 +14,9 @@
       <p><strong>Le</strong> .... <strong>à</strong> ??H?? <strong>avec</strong> le Dr...</p>
     </div>
     <button (click)="onSubmit(this.id)" class="btn btn-danger" type="submit">Supprimer mon compte</button>
+    <button class="btn btn-success">
+      <a [routerLink]="['/modification']">Modifier</a>
+    </button>
   </div>
 
   <div class="col-2"></div>

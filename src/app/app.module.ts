@@ -35,10 +35,8 @@ const appRoutes: Routes = [
   {path:'listeRendezVous' , component: ListeRDVComponent},
   {path:'priseRendezVous' , component: PriseRDVComponent},
   {path:'lesPraticiens' , component: PraticiensComponent},
-  {path:'modificationPraticien' , component: ModificationComponent},
-  {path:'modificationPatient' , component: ModificationComponent},
-  {path:'monComptePatient' , component: MonCompteComponent},
-  {path:'monComptePraticien' , component: MonCompteComponent},
+  {path:'modification' , component: ModificationComponent},
+  {path:'monCompte' , component: MonCompteComponent},
   {path:'detailPraticien' , component: PraticienComponent}
 ];
 

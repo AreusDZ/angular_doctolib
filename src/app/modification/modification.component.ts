@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./modification.component.css']
 })
 export class ModificationComponent implements OnInit {
-
+  type = JSON.parse(localStorage.getItem('type'));
   constructor() { }
 
   ngOnInit(): void {
